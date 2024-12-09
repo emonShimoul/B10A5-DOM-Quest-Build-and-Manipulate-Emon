@@ -11,49 +11,51 @@
     />
   </head>
   <body>
-    <!-- header starts -->
-    <header class="bg-[#F9F7F3] lg:px-8 px-2 py-4 flex justify-between">
-      <div class="blog w-1/3">
-        <button class="btn text-xl bg-[#B4F461] font-semibold px-8">
-          Blog
+    <div id="header-banner" class="fixed w-full bg-[#F9F7F3] bg-opacity-100">
+      <!-- header starts -->
+      <header class="bg-[#F9F7F3] lg:px-8 px-2 py-4 flex justify-between">
+        <div class="blog w-1/3">
+          <button class="btn text-xl bg-[#B4F461] font-semibold px-8">
+            Blog
+          </button>
+        </div>
+        <div class="logo flex gap-4 w-1/3 justify-center items-center">
+          <img
+            class="text-lg lg:w-11 lg:h-11 w-8 h-8"
+            src="assets/logo.png"
+            alt=""
+          />
+          <h3 class="lg:text-xl font-semibold">Donate Bangladesh</h3>
+        </div>
+        <div class="total-amount flex gap-2 w-1/3 justify-end items-center">
+          <img class="w-5 h-5" src="assets/coin.png" alt="" />
+          <p id="main-balance" class="font-medium">5500 BDT</p>
+        </div>
+      </header>
+      <!-- header ends -->
+
+      <!-- banner starts -->
+      <div
+        class="banner lg:mt-20 mt-10 mb-8 px-8 flex justify-center items-center gap-4"
+      >
+        <button
+          id="donation-btn"
+          class="btn text-xl border border-gray-400 bg-[#B4F461] font-semibold px-8"
+        >
+          Donation
+        </button>
+        <button
+          id="history-btn"
+          class="btn text-xl border border-gray-400 font-semibold px-8"
+        >
+          History
         </button>
       </div>
-      <div class="logo flex gap-4 w-1/3 justify-center items-center">
-        <img
-          class="text-lg lg:w-11 lg:h-11 w-8 h-8"
-          src="assets/logo.png"
-          alt=""
-        />
-        <h3 class="lg:text-xl font-semibold">Donate Bangladesh</h3>
-      </div>
-      <div class="total-amount flex gap-2 w-1/3 justify-end items-center">
-        <img class="w-5 h-5" src="assets/coin.png" alt="" />
-        <p id="main-balance" class="font-medium">5500 BDT</p>
-      </div>
-    </header>
-    <!-- header ends -->
-
-    <!-- banner starts -->
-    <div
-      class="banner lg:mt-20 mt-10 mb-8 px-8 flex justify-center items-center gap-4"
-    >
-      <button
-        id="donation-btn"
-        class="btn text-xl bg-[#B4F461] font-semibold px-8"
-      >
-        Donation
-      </button>
-      <button
-        id="history-btn"
-        class="btn text-xl border border-gray-400 font-semibold px-8"
-      >
-        History
-      </button>
+      <!-- banner ends -->
     </div>
-    <!-- banner ends -->
 
     <!-- donation-setion starts -->
-    <div id="donation-sec" class="lg:px-8 px-2">
+    <div id="donation-sec" class="lg:px-8 px-2 pt-60">
       <div
         class="donation-sec1 lg:flex gap-8 border border-gray-300 lg:p-8 p-4 rounded-xl mb-8"
       >
@@ -209,5 +211,6 @@
     <script src="js/donateNoakhali.js"></script>
     <script src="js/donateFeni.js"></script>
     <script src="js/donateForQuota.js"></script>
+    <script src="js/scrolling.js"></script>
   </body>
 </html>
