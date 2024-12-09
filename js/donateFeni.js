@@ -1,12 +1,10 @@
 document
-  .getElementById("noakhali-donate-btn")
+  .getElementById("feni-donate-btn")
   .addEventListener("click", function (event) {
     event.preventDefault();
 
-    const donationAmount = getInputFieldValueById("noakhali-donation-amount");
-    const totalDonateAmount = getTextFieldValueById(
-      "noakhali-donate-amount-total"
-    );
+    const donationAmount = getInputFieldValueById("feni-donation-amount");
+    const totalDonateAmount = getTextFieldValueById("feni-donate-amount-total");
     const remainBalance = balanceFieldValueById("main-balance");
 
     if (
@@ -18,7 +16,7 @@ document
     } else {
       const donateAmount = totalDonateAmount + donationAmount;
       const newBalance = remainBalance - donationAmount;
-      document.getElementById("noakhali-donate-amount-total").innerText =
+      document.getElementById("feni-donate-amount-total").innerText =
         donateAmount;
       document.getElementById("main-balance").innerText = newBalance;
 
@@ -33,7 +31,7 @@ document
       const currentDate = new Date();
       const formatDate = currentDate.toString();
       div.innerHTML = `
-          <p class="text-xl font-bold">${donationAmount} taka is Donated for Flood at Noakhali, Bangladesh</p><br>
+          <p class="text-xl font-bold">${donationAmount} taka is Donated for Flood Relief in Feni, Bangladesh</p><br>
           <p class="text-base font-light text-secondary">Date: ${formatDate}</p>
 
       `;
