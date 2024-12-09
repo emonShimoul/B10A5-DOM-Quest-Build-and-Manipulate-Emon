@@ -17,11 +17,13 @@ function balanceFieldValueById(id) {
 }
 
 function showSectionById(id) {
-  // hidden
-  document.getElementById("add-money-form").classList.add("hidden");
-  document.getElementById("cash-out-form").classList.add("hidden");
-  document.getElementById("transaction-section").classList.add("hidden");
-
-  // visible
+  document.getElementById("donation-sec").classList.add("hidden");
+  document.getElementById("transaction-container").classList.add("hidden");
   document.getElementById(id).classList.remove("hidden");
+}
+
+function showButtonColorById(id) {
+  document.getElementById("donation-btn").classList.remove("bg-[#B4F461]");
+  document.getElementById("history-btn").classList.remove("bg-[#B4F461]");
+  document.getElementById(id).classList.add("bg-[#B4F461]");
 }

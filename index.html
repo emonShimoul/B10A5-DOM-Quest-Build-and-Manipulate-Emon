@@ -37,11 +37,15 @@
     <div
       class="banner lg:mt-20 mt-10 mb-8 px-8 flex justify-center items-center gap-4"
     >
-      <button class="btn text-xl bg-[#B4F461] font-semibold px-8">
+      <button
+        id="donation-btn"
+        class="btn text-xl bg-[#B4F461] font-semibold px-8"
+      >
         Donation
       </button>
       <button
-        class="btn text-xl border border-gray-400 bg-white font-semibold px-8"
+        id="history-btn"
+        class="btn text-xl border border-gray-400 font-semibold px-8"
       >
         History
       </button>
@@ -49,7 +53,7 @@
     <!-- banner ends -->
 
     <!-- donation-setion starts -->
-    <div class="donation-sec lg:px-8 px-2">
+    <div id="donation-sec" class="lg:px-8 px-2">
       <div
         class="donation-sec1 lg:flex gap-8 border border-gray-300 lg:p-8 p-4 rounded-xl mb-8"
       >
@@ -193,11 +197,15 @@
     <!-- donation-setion ends -->
 
     <!-- history-section starts -->
-    <div id="transaction-container" class="history lg:px-8 px-2 py-4"></div>
+    <div
+      id="transaction-container"
+      class="history lg:px-8 px-2 py-4 hidden"
+    ></div>
     <!-- history-section ends -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/utilities.js"></script>
+    <script src="js/features.js"></script>
     <script src="js/donateNoakhali.js"></script>
     <script src="js/donateFeni.js"></script>
     <script src="js/donateForQuota.js"></script>

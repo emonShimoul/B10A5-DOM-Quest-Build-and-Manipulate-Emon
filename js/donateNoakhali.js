@@ -28,7 +28,8 @@ document
         "border-solid",
         "border-bg-tertiary",
         "rounded-lg",
-        "p-4"
+        "p-4",
+        "my-4"
       );
       const currentDate = new Date();
       const formatDate = currentDate.toString();
