@@ -28,7 +28,7 @@
       </div>
       <div class="total-amount flex gap-2 w-1/3 justify-end items-center">
         <img class="w-5 h-5" src="assets/coin.png" alt="" />
-        <p class="font-medium">5500 BDT</p>
+        <p id="main-balance" class="font-medium">5500 BDT</p>
       </div>
     </header>
     <!-- header ends -->
@@ -65,7 +65,9 @@
             class="inline-flex gap-2 justify-end items-center bg-[#1111110D] px-4 py-2.5 rounded-lg mb-4"
           >
             <img class="w-5 h-5" src="assets/coin.png" alt="" />
-            <span class="font-medium">0 BDT</span>
+            <p class="font-medium">
+              <span id="noakhali-donate-amount-total">0</span> BDT
+            </p>
           </div>
           <h3 class="text-xl font-bold mb-4">
             Donate for Flood at Noakhali, Bangladesh
@@ -79,11 +81,15 @@
             need.
           </p>
           <input
+            id="noakhali-donation-amount"
             type="text"
             placeholder="Write donation amount"
             class="input input-bordered w-full mb-4"
           />
-          <button class="btn text-xl bg-[#B4F461] font-semibold w-full">
+          <button
+            id="noakhali-donate-btn"
+            class="btn text-xl bg-[#B4F461] font-semibold w-full"
+          >
             Donate Now
           </button>
         </div>
@@ -104,7 +110,9 @@
             class="inline-flex gap-2 justify-end items-center bg-[#1111110D] px-4 py-2.5 rounded-lg mb-4"
           >
             <img class="w-5 h-5" src="assets/coin.png" alt="" />
-            <span class="font-medium">0 BDT</span>
+            <p class="font-medium">
+              <span id="feni-donate-amount">600</span> BDT
+            </p>
           </div>
           <h3 class="text-xl font-bold mb-4">
             Donate for Flood Relief in Feni,Bangladesh
@@ -124,7 +132,10 @@
             placeholder="Write donation amount"
             class="input input-bordered w-full mb-4"
           />
-          <button class="btn text-xl bg-[#B4F461] font-semibold w-full">
+          <button
+            id="feni-donate-btn"
+            class="btn text-xl bg-[#B4F461] font-semibold w-full"
+          >
             Donate Now
           </button>
         </div>
@@ -145,7 +156,9 @@
             class="inline-flex gap-2 justify-end items-center bg-[#1111110D] px-4 py-2.5 rounded-lg mb-4"
           >
             <img class="w-5 h-5" src="assets/coin.png" alt="" />
-            <span class="font-medium">0 BDT</span>
+            <p class="font-medium">
+              <span id="quota-donate-amount">2400</span> BDT
+            </p>
           </div>
           <h3 class="text-xl font-bold mb-4">
             Aid for Injured in the Quota Movement
@@ -166,7 +179,10 @@
             placeholder="Write donation amount"
             class="input input-bordered w-full mb-8"
           />
-          <button class="btn text-xl bg-[#B4F461] font-semibold w-full">
+          <button
+            id="quota-donate-btn"
+            class="btn text-xl bg-[#B4F461] font-semibold w-full"
+          >
             Donate Now
           </button>
         </div>
@@ -175,11 +191,11 @@
     <!-- donation-setion ends -->
 
     <!-- history-section starts -->
-    <div class="history lg:px-8 px-2 py-4">
-      <h2>This is history</h2>
-    </div>
+    <div id="transaction-container" class="history lg:px-8 px-2 py-4"></div>
     <!-- history-section ends -->
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/donateNoakhali.js"></script>
   </body>
 </html>
